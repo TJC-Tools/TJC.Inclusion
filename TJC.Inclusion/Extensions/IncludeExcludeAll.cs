@@ -1,8 +1,10 @@
-﻿namespace TJC.Inclusion.Extensions;
+﻿using TJC.Inclusion.Interfaces;
+
+namespace TJC.Inclusion.Extensions;
 
 public static class IncludeExcludeAll
 {
-    public static void IncludeAll(this object instance)
+    public static void IncludeAll(this IIncludable instance)
     {
         var inclusions = instance.GetInclusions();
         foreach (var inclusion in inclusions)
@@ -12,7 +14,7 @@ public static class IncludeExcludeAll
         }
     }
 
-    public static void ExcludeAll(this object instance)
+    public static void ExcludeAll(this IIncludable instance)
     {
         var inclusions = instance.GetInclusions();
         foreach (var inclusion in inclusions)
