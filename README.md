@@ -1,6 +1,6 @@
-![GitHub Tag](https://img.shields.io/github/v/tag/TJC-Tools/TJC.Inclusion) ![NuGet Version](https://img.shields.io/nuget/v/TJC.Inclusion)
+![GitHub Tag](https://img.shields.io/github/v/tag/TJC-Tools/TJC.Inclusion) [![NuGet Version](https://img.shields.io/nuget/v/TJC.Inclusion)](https://www.nuget.org/packages/TJC.Inclusion)
 
-![NuGet Downloads](https://img.shields.io/nuget/dt/TJC.Inclusion) ![Size](https://img.shields.io/github/repo-size/TJC-Tools/TJC.Inclusion) ![License](https://img.shields.io/github/license/TJC-Tools/TJC.Inclusion.svg)
+[![NuGet Downloads](https://img.shields.io/nuget/dt/TJC.Inclusion)](https://www.nuget.org/packages/TJC.Inclusion) ![Size](https://img.shields.io/github/repo-size/TJC-Tools/TJC.Inclusion) [![License](https://img.shields.io/github/license/TJC-Tools/TJC.Inclusion.svg)](LICENSE)
 
 The [Inclusion](TJC.Inclusion/Inclusion.cs) class is used to include/exclude options.
 
