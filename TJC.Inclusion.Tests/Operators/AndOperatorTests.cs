@@ -1,6 +1,5 @@
 namespace TJC.Inclusion.Tests.Operators;
 
-
 public class AndOperatorTests
 {
     [Fact]
