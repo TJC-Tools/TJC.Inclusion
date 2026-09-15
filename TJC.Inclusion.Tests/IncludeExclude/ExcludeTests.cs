@@ -1,6 +1,5 @@
 namespace TJC.Inclusion.Tests.IncludeExclude;
 
-
 public class ExcludeTests
 {
     [Fact]

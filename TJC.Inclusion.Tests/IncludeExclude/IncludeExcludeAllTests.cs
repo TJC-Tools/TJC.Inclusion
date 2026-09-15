@@ -3,7 +3,6 @@ using TJC.Inclusion.Interfaces;
 
 namespace TJC.Inclusion.Tests.IncludeExclude;
 
-
 public class IncludeExcludeAllTests
 {
     [Fact]

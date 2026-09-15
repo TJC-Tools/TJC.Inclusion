@@ -1,6 +1,5 @@
 namespace TJC.Inclusion.Tests.Constructor;
 
-
 public class InclusionConstructorTests
 {
     [Fact]
