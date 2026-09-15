@@ -1,9 +1,9 @@
-﻿namespace TJC.Inclusion.Tests.Operators;
+namespace TJC.Inclusion.Tests.Operators;
 
-[TestClass]
+
 public class OrOperatorTests
 {
-    [TestMethod]
+    [Fact]
     public void OrOperator_WithBool()
     {
         // Arrange
@@ -11,17 +11,17 @@ public class OrOperatorTests
         var excluded = new Inclusion(false);
 
         // Assert
-        Assert.IsTrue(included | true);
-        Assert.IsTrue(included | false);
-        Assert.IsTrue(included || true);
-        Assert.IsTrue(included || false);
-        Assert.IsTrue(excluded | true);
-        Assert.IsFalse(excluded | false);
-        Assert.IsTrue(excluded || true);
-        Assert.IsFalse(excluded || false);
+        Assert.True(included | true);
+        Assert.True(included | false);
+        Assert.True(included || true);
+        Assert.True(included || false);
+        Assert.True(excluded | true);
+        Assert.False(excluded | false);
+        Assert.True(excluded || true);
+        Assert.False(excluded || false);
     }
 
-    [TestMethod]
+    [Fact]
     public void OrOperator_WithInclusion()
     {
         // Arrange
@@ -31,13 +31,13 @@ public class OrOperatorTests
         var excluded2 = new Inclusion(false);
 
         // Assert
-        Assert.IsTrue(included1 | included2);
-        Assert.IsTrue(included1 | excluded1);
-        Assert.IsTrue(included1 | excluded2);
-        Assert.IsFalse(excluded1 | excluded2);
-        Assert.IsTrue(included1 || included2);
-        Assert.IsTrue(included1 || excluded1);
-        Assert.IsTrue(included1 || excluded2);
-        Assert.IsFalse(excluded1 || excluded2);
+        Assert.True(included1 | included2);
+        Assert.True(included1 | excluded1);
+        Assert.True(included1 | excluded2);
+        Assert.False(excluded1 | excluded2);
+        Assert.True(included1 || included2);
+        Assert.True(included1 || excluded1);
+        Assert.True(included1 || excluded2);
+        Assert.False(excluded1 || excluded2);
     }
 }

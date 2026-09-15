@@ -1,4 +1,4 @@
-﻿using TJC.Inclusion.Interfaces;
+using TJC.Inclusion.Interfaces;
 
 namespace TJC.Inclusion.Extensions;
 

@@ -1,35 +1,35 @@
-﻿namespace TJC.Inclusion.Tests.Operators;
+namespace TJC.Inclusion.Tests.Operators;
 
-[TestClass]
+
 public class ImplicitOperatorTests
 {
     #region Get
 
-    [TestMethod]
+    [Fact]
     public void GetWithImplicitOperator_True()
     {
         // Arrange
         var inclusion = new Inclusion(true);
 
         // Assert
-        Assert.IsTrue(inclusion);
+        Assert.True(inclusion);
     }
 
-    [TestMethod]
+    [Fact]
     public void GetWithImplicitOperator_False()
     {
         // Arrange
         var inclusion = new Inclusion(false);
 
         // Assert
-        Assert.IsFalse(inclusion);
+        Assert.False(inclusion);
     }
 
     #endregion
 
     #region Set
 
-    [TestMethod]
+    [Fact]
     public void SetWithImplicitOperator_True()
     {
         // Arrange
@@ -39,10 +39,10 @@ public class ImplicitOperatorTests
         Inclusion inclusion = value;
 
         // Assert
-        Assert.IsTrue(inclusion._included);
+        Assert.True(inclusion._included);
     }
 
-    [TestMethod]
+    [Fact]
     public void SetWithImplicitOperator_False()
     {
         // Arrange
@@ -52,7 +52,7 @@ public class ImplicitOperatorTests
         Inclusion inclusion = value;
 
         // Assert
-        Assert.IsFalse(inclusion._included);
+        Assert.False(inclusion._included);
     }
 
     #endregion

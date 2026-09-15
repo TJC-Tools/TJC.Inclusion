@@ -3,29 +3,29 @@ using TJC.Inclusion.Interfaces;
 
 namespace TJC.Inclusion.Tests.IncludeExclude;
 
-[TestClass]
+
 public class IncludeExcludeAllTests
 {
-    [TestMethod]
+    [Fact]
     public void IncludeAll_UpdatesEveryInclusionProperty()
     {
         var options = new IncludableOptions(false, false);
 
         options.IncludeAll();
 
-        Assert.IsTrue(options.First);
-        Assert.IsTrue(options.Second);
+        Assert.True(options.First);
+        Assert.True(options.Second);
     }
 
-    [TestMethod]
+    [Fact]
     public void ExcludeAll_UpdatesEveryInclusionProperty()
     {
         var options = new IncludableOptions(true, true);
 
         options.ExcludeAll();
 
-        Assert.IsFalse(options.First);
-        Assert.IsFalse(options.Second);
+        Assert.False(options.First);
+        Assert.False(options.Second);
     }
 
     private sealed class IncludableOptions(bool first, bool second) : IIncludable

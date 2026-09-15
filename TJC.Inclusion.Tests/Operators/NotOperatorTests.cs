@@ -1,24 +1,24 @@
-﻿namespace TJC.Inclusion.Tests.Operators;
+namespace TJC.Inclusion.Tests.Operators;
 
-internal class NotOperatorTests
+public class NotOperatorTests
 {
-    [TestMethod]
+    [Fact]
     public void NotOperator_InternalTrue_ReturnsFalse()
     {
         // Arrange
         var included = new Inclusion(true);
 
         // Assert
-        Assert.IsFalse(!included);
+        Assert.False(!included);
     }
 
-    [TestMethod]
+    [Fact]
     public void NotOperator_InternalFalse_ReturnsTrue()
     {
         // Arrange
         var excluded = new Inclusion(false);
 
         // Assert
-        Assert.IsTrue(!excluded);
+        Assert.True(!excluded);
     }
 }

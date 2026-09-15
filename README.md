@@ -6,6 +6,7 @@
 ![Size](https://img.shields.io/github/repo-size/TJC-Tools/TJC.Inclusion)
 [![License](https://img.shields.io/github/license/TJC-Tools/TJC.Inclusion.svg)](LICENSE)
 
+[![tests](https://github.com/TJC-Tools/TJC.Inclusion/actions/workflows/ct-matrix.yml/badge.svg)](https://github.com/TJC-Tools/TJC.Inclusion/actions/workflows/ct-matrix.yml)
 [![codecov](https://codecov.io/gh/TJC-Tools/TJC.Inclusion/graph/badge.svg?token=Y6FE1L2M4Y)](https://codecov.io/gh/TJC-Tools/TJC.Inclusion)
 
 ## Documentation

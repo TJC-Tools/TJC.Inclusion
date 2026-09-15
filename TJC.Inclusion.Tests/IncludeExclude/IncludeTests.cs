@@ -1,9 +1,9 @@
-﻿namespace TJC.Inclusion.Tests.IncludeExclude;
+namespace TJC.Inclusion.Tests.IncludeExclude;
 
-[TestClass]
+
 public class IncludeTests
 {
-    [TestMethod]
+    [Fact]
     public void CallInclude_InternalTrue()
     {
         // Arrange
@@ -13,6 +13,6 @@ public class IncludeTests
         inclusion.Include();
 
         // Assert
-        Assert.IsTrue(inclusion._included);
+        Assert.True(inclusion._included);
     }
 }

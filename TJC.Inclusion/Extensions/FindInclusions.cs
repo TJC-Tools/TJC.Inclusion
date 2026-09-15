@@ -1,4 +1,4 @@
-﻿using System.Reflection;
+using System.Reflection;
 using TJC.Inclusion.Interfaces;
 
 namespace TJC.Inclusion.Extensions;

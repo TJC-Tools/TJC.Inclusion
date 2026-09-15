@@ -1,4 +1,4 @@
-﻿namespace TJC.Inclusion;
+namespace TJC.Inclusion;
 
 public class Inclusion(bool included = true)
 {

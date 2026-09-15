@@ -1,3 +1,3 @@
-﻿namespace TJC.Inclusion.Interfaces;
+namespace TJC.Inclusion.Interfaces;
 
 public interface IIncludable;

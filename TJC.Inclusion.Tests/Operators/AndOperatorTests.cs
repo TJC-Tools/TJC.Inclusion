@@ -1,9 +1,9 @@
-﻿namespace TJC.Inclusion.Tests.Operators;
+namespace TJC.Inclusion.Tests.Operators;
 
-[TestClass]
+
 public class AndOperatorTests
 {
-    [TestMethod]
+    [Fact]
     public void AndOperator_WithBool()
     {
         // Arrange
@@ -11,17 +11,17 @@ public class AndOperatorTests
         var excluded = new Inclusion(false);
 
         // Assert
-        Assert.IsTrue(included & true);
-        Assert.IsFalse(included & false);
-        Assert.IsTrue(included && true);
-        Assert.IsFalse(included && false);
-        Assert.IsFalse(excluded & true);
-        Assert.IsFalse(excluded & false);
-        Assert.IsFalse(excluded && true);
-        Assert.IsFalse(excluded && false);
+        Assert.True(included & true);
+        Assert.False(included & false);
+        Assert.True(included && true);
+        Assert.False(included && false);
+        Assert.False(excluded & true);
+        Assert.False(excluded & false);
+        Assert.False(excluded && true);
+        Assert.False(excluded && false);
     }
 
-    [TestMethod]
+    [Fact]
     public void AndOperator_WithInclusion()
     {
         // Arrange
@@ -31,13 +31,13 @@ public class AndOperatorTests
         var excluded2 = new Inclusion(false);
 
         // Assert
-        Assert.IsTrue(included1 & included2);
-        Assert.IsFalse(included1 & excluded1);
-        Assert.IsFalse(included1 & excluded2);
-        Assert.IsFalse(excluded1 & excluded2);
-        Assert.IsTrue(included1 && included2);
-        Assert.IsFalse(included1 && excluded1);
-        Assert.IsFalse(included1 && excluded2);
-        Assert.IsFalse(excluded1 && excluded2);
+        Assert.True(included1 & included2);
+        Assert.False(included1 & excluded1);
+        Assert.False(included1 & excluded2);
+        Assert.False(excluded1 & excluded2);
+        Assert.True(included1 && included2);
+        Assert.False(included1 && excluded1);
+        Assert.False(included1 && excluded2);
+        Assert.False(excluded1 && excluded2);
     }
 }

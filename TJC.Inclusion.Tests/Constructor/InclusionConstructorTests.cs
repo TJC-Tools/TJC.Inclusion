@@ -1,25 +1,25 @@
-﻿namespace TJC.Inclusion.Tests.Constructor;
+namespace TJC.Inclusion.Tests.Constructor;
 
-[TestClass]
+
 public class InclusionConstructorTests
 {
-    [TestMethod]
+    [Fact]
     public void ConstructTrue_InternalTrue()
     {
         // Arrange
         var inclusion = new Inclusion(true);
 
         // Assert
-        Assert.IsTrue(inclusion._included);
+        Assert.True(inclusion._included);
     }
 
-    [TestMethod]
+    [Fact]
     public void ConstructFalse_InternalFalse()
     {
         // Arrange
         var inclusion = new Inclusion(false);
 
         // Assert
-        Assert.IsFalse(inclusion._included);
+        Assert.False(inclusion._included);
     }
 }
