@@ -9,7 +9,7 @@ public class NotOperatorTests
         var included = new Inclusion(true);
 
         // Assert
-        Assert.False(!included);
+        Assert.True(included);
     }
 
     [Fact]
@@ -19,6 +19,6 @@ public class NotOperatorTests
         var excluded = new Inclusion(false);
 
         // Assert
-        Assert.True(!excluded);
+        Assert.False(excluded);
     }
 }
